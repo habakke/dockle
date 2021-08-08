@@ -26,9 +26,9 @@ nfpms:
       - apk
       - deb
       - rpm
-    vendor: "goodwithtech"
-    homepage: "https://github.com/goodwithtech"
-    maintainer: "Tomoya Amachi <tomoya.amachi@gmail.com>"
+    vendor: "habakke"
+    homepage: "https://github.com/habakke"
+    maintainer: "Håvard Bakke <habakke@gmail.com>"
     description: "A Security and Dockerfile checker for Containers"
     license: "AGPL"
     file_name_template: "{{.ProjectName}}_{{.Version}}_{{.Os}}-{{.Arch}}"
@@ -71,18 +71,17 @@ archives:
 brews:
   -
     tap:
-      owner: goodwithtech
+      owner: habakke
       name: homebrew-r
     folder: Formula
-    homepage: "https://github.com/goodwithtech/dockle"
+    homepage: "https://github.com/habakke/dockle"
     description: "Simple security auditing, helping build the Best Docker Images"
     test: |
       system "#{bin}/program --version"
 
 dockers:
   - image_templates:
-      - 'goodwithtech/dockle:{{ .Tag }}-amd64'
-      - 'ghcr.io/goodwithtech/dockle:{{ .Tag }}-amd64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
     dockerfile: Dockerfile.releaser
     build_flag_templates:
       - "--pull"
@@ -93,8 +92,7 @@ dockers:
       - "--label=org.opencontainers.image.source={{.GitURL}}"
       - "--platform=linux/amd64"
   - image_templates:
-      - 'goodwithtech/dockle:{{ .Tag }}-arm64'
-      - 'ghcr.io/goodwithtech/dockle:{{ .Tag }}-arm64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'
     dockerfile: Dockerfile.releaser
     build_flag_templates:
       - "--pull"
@@ -106,19 +104,19 @@ dockers:
       - "--platform=linux/arm64"
     goarch: arm64
 docker_manifests:
-  - name_template: 'goodwithtech/dockle:{{ .Tag }}'
+  - name_template: 'ghcr.io/habakke/dockle:{{ .Tag }}'
     image_templates:
-      - 'goodwithtech/dockle:{{ .Tag }}-amd64'
-      - 'goodwithtech/dockle:{{ .Tag }}-arm64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'
   - name_template: 'ghcr.io/goodwithtech/dockle:{{ .Tag }}'
     image_templates:
-      - 'ghcr.io/goodwithtech/dockle:{{ .Tag }}-amd64'
-      - 'ghcr.io/goodwithtech/dockle:{{ .Tag }}-arm64'
-  - name_template: 'goodwithtech/dockle:latest'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'
+  - name_template: 'ghcr.io/habakke/dockle:latest'
     image_templates:
-      - 'goodwithtech/dockle:{{ .Tag }}-amd64'
-      - 'goodwithtech/dockle:{{ .Tag }}-arm64'
-  - name_template: 'ghcr.io/goodwithtech/dockle:latest'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'
+  - name_template: 'ghcr.io/habakke/dockle:latest'
     image_templates:
-      - 'ghcr.io/goodwithtech/dockle:{{ .Tag }}-amd64'
-      - 'ghcr.io/goodwithtech/dockle:{{ .Tag }}-arm64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
+      - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'

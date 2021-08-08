@@ -1,5 +1,5 @@
 FROM golang:1.16-alpine AS builder
-ARG TARGET_DIR="github.com/goodwithtech/dockle"
+ARG TARGET_DIR="github.com/habakke/dockle"
 
 WORKDIR /go/src/${TARGET_DIR}
 RUN apk --no-cache add git
