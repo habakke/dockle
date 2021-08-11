@@ -108,7 +108,7 @@ docker_manifests:
     image_templates:
       - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
       - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'
-  - name_template: 'ghcr.io/goodwithtech/dockle:{{ .Tag }}'
+  - name_template: 'ghcr.io/habakke/dockle:{{ .Tag }}'
     image_templates:
       - 'ghcr.io/habakke/dockle:{{ .Tag }}-amd64'
       - 'ghcr.io/habakke/dockle:{{ .Tag }}-arm64'
