@@ -10,7 +10,7 @@
 
 ```bash
 $ brew untap habakke/dockle # who use 0.1.16 or older version
-$ brew install habakke/r/dockle
+$ brew install habakke/dockle
 $ dockle [YOUR_IMAGE_NAME]
 ```
 See [Installation](#installation) and [Common Examples](#common-examples)
@@ -50,7 +50,7 @@ See [Installation](#installation) and [Common Examples](#common-examples)
   - [Travis CI](#travis-ci)
   - [CircleCI](#circleci)
   - [GitLab CI](#gitlab-ci)
-  - [Authorization for Private Docker Registry](#authorization-for-private-docker-registry) 
+  - [Authorization for Private Docker Registry](#authorization-for-private-docker-registry)
 - [Checkpoint Details](CHECKPOINT.md)
   - CIS's Docker Image Checkpoints
   - Dockle Checkpoints for Docker
@@ -78,7 +78,7 @@ See [Installation](#installation) and [Common Examples](#common-examples)
 | Target |  Image | Dockerfile | Host<br/>Docker Daemon<br/>Image<br/>Container Runtime | Image |
 | How to run | Binary | Binary | ShellScript | Binary |
 | Dependency | No | No | Some dependencies | No |
-| CI Suitable | ✓ | ✓ | x | x | 
+| CI Suitable | ✓ | ✓ | x | x |
 | Purpose |Security Audit<br/>Dockerfile Lint| Dockerfile Lint | Security Audit<br/>Dockerfile Lint | Scan Vulnerabilities |
 
 # Installation
@@ -88,7 +88,7 @@ See [Installation](#installation) and [Common Examples](#common-examples)
 You can use Homebrew on [Mac OS X](https://brew.sh/) or [Linux and WSL (Windows Subsystem for Linux)](https://docs.brew.sh/Homebrew-on-Linux).
 
 ```bash
-$ brew install habakke/r/dockle
+$ brew install habakke/dockle
 ```
 
 ## RHEL/CentOS

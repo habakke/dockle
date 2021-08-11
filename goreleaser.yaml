@@ -72,7 +72,7 @@ brews:
   -
     tap:
       owner: habakke
-      name: homebrew-r
+      name: homebrew
     folder: Formula
     homepage: "https://github.com/habakke/dockle"
     description: "Simple security auditing, helping build the Best Docker Images"
