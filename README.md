@@ -1,8 +1,5 @@
 <img src="imgs/logo.png" width="450">
 
-[GitHub release](https://img.shields.io/github/release/habakke/dockle.svg)](https://github.com/habakke/dockle/releases/latest)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-
 > Dockle - Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start
 
 `Dockle` helps you:
