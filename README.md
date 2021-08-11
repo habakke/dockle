@@ -1,8 +1,6 @@
 <img src="imgs/logo.png" width="450">
 
-[![Financial Contributors on Open Collective](https://opencollective.com/dockle/all/badge.svg?label=financial+contributors)](https://opencollective.com/dockle) [![GitHub release](https://img.shields.io/github/release/habakke/dockle.svg)](https://github.com/habakke/dockle/releases/latest)
-[![CircleCI](https://circleci.com/gh/habakke/dockle.svg?style=svg)](https://circleci.com/gh/habakke/dockle)
-[![Go Report Card](https://goreportcard.com/badge/github.com/habakke/dockle)](https://goreportcard.com/report/github.com/habakke/dockle)
+[GitHub release](https://img.shields.io/github/release/habakke/dockle.svg)](https://github.com/habakke/dockle/releases/latest)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 > Dockle - Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start
